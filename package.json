@@ -1,6 +1,6 @@
 {
   "name": "timerish",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Stopwatch-y logger-y thing",
   "main": "index.js",
   "scripts": {
