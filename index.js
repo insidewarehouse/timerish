@@ -6,7 +6,7 @@ module.exports = function () {
 	var save = function (k, since, extraData) {
 		var diff = process.hrtime(since);
 		timerLog[k] = { k: k, t: diff[0] + diff[1] / 1e9 };
-		if (extraData) timerLog[k].d = extraData;
+		if (typeof(extraData) !== "undefined") timerLog[k].d = extraData;
 	};
 
 	var tick = function (k, extraData) {
